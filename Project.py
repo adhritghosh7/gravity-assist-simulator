@@ -7,3 +7,4 @@ G = 6.67430e-11
 
 #Mass of the sun in kgs
 M_sun = 1.989e30
+
