@@ -15,7 +15,7 @@ AU = 1.496e11
 Day_sec = 86400
 
 #Planets Database -> [Mass (kg), Semi-major axis (m), Orbital speed (m/s)]
-Planets = {
+planets = {
     'Earth':{'mass':5.972e24, 'a':1 * AU, 'v':29780},
     'Mars':{'mass':6.416e23, 'a':1.523 * AU, 'v':24070},
     'Jupiter':{'mass':1.898e27, 'a':5.2 * AU, 'v':13060}
