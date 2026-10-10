@@ -20,3 +20,15 @@ Planets = {
     'Mars':{'mass':6.416e23, 'a':1.523 * AU, 'v':24070},
     'Jupiter':{'mass':1.898e27, 'a':5.2 * AU, 'v':13060}
 }
+
+print("Welcome to the Gravity Assist Simulation!")
+print("The planets available are: ")
+for i in Planets.keys():
+    print(i)
+
+#Configuring the simulation
+t_planet = input("Enter the name of the planet you want to choose: ")
+
+print("The mass of", t_planet, "is", Planets[t_planet]['mass'], "kg")
+print("The semi-major axis of", t_planet, "is", Planets[t_planet]['a'], "m")
+print("The orbital speed of", t_planet, "is", Planets[t_planet]['v'], "m/s")
