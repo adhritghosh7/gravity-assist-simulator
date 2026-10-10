@@ -23,8 +23,11 @@ Planets = {
 
 print("Welcome to the Gravity Assist Simulation!")
 print("The planets available are: ")
-for i in Planets.keys():
-    print(i)
+
+k = list(Planets.keys())
+for j in range(len(k)):
+    print(j+1,". ", k[j], sep='')
+    
 
 #Configuring the simulation and displaying the properties of the chosen planet
 t_planet = input("Enter the name of the planet you want to choose: ")
