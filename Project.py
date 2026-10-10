@@ -26,9 +26,18 @@ print("The planets available are: ")
 for i in Planets.keys():
     print(i)
 
-#Configuring the simulation
+#Configuring the simulation and displaying the properties of the chosen planet
 t_planet = input("Enter the name of the planet you want to choose: ")
 
 print("The mass of", t_planet, "is", Planets[t_planet]['mass'], "kg")
 print("The semi-major axis of", t_planet, "is", Planets[t_planet]['a'], "m")
 print("The orbital speed of", t_planet, "is", Planets[t_planet]['v'], "m/s")
+
+#Defining the arrays for the position and the velocity vectors of the planet
+
+#The sun is at the origin of the coordinate system (0,0)
+#Initial position vector of planet
+r_0 = np.array([Planets[t_planet]['a'],0.0])
+
+#Initial velocity vector of planet
+v_0 = np.array([0.0, Planets[t_planet]['v']])
