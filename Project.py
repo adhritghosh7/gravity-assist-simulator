@@ -47,3 +47,8 @@ r_0 = np.array([Planets[t_planet]['a'],0.0])
 
 #Initial velocity vector of planet
 v_0 = np.array([0.0, Planets[t_planet]['v']])
+
+#Joined the two initial arrays together
+state_0 = np.hstack((r_0, v_0))
+print("The initial position and velocity vectors are: ")
+print(state_0)
