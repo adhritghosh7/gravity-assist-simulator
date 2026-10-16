@@ -32,9 +32,12 @@ for j in range(len(k)):
 #Configuring the simulation and displaying the properties of the chosen planet
 t_planet = input("Enter the name of the planet you want to choose: ")
 
-print("The mass of", t_planet, "is", Planets[t_planet]['mass'], "kg")
-print("The semi-major axis of", t_planet, "is", Planets[t_planet]['a'], "m")
-print("The orbital speed of", t_planet, "is", Planets[t_planet]['v'], "m/s")
+if t_planet not in Planets:
+    print("Invalid planet name. Please choose from the available planets.")
+else:
+    print("The mass of", t_planet, "is", Planets[t_planet]['mass'], "kg")
+    print("The semi-major axis of", t_planet, "is", Planets[t_planet]['a'], "m")
+    print("The orbital speed of", t_planet, "is", Planets[t_planet]['v'], "m/s")
 
 #Defining the arrays for the position and the velocity vectors of the planet
 
