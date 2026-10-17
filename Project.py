@@ -38,6 +38,7 @@ else:
     print("The mass of", t_planet, "is", Planets[t_planet]['mass'], "kg")
     print("The semi-major axis of", t_planet, "is", Planets[t_planet]['a'], "m")
     print("The orbital speed of", t_planet, "is", Planets[t_planet]['v'], "m/s")
+    print()
 
 #Defining the arrays for the position and the velocity vectors of the planet
 
