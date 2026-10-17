@@ -50,15 +50,23 @@ v_0 = np.array([0.0, Planets[t_planet]['v']])
 
 #Joined the two initial arrays together
 state_0 = np.hstack((r_0, v_0))
-print("The initial position and velocity vectors are: ")
+print("The initial position and velocity vectors of",t_planet,"are: ")
 print(state_0)
+print()
 
 
 #Defining the sun's position and velocity vectors in our cartesian coordinate system
 #The sun is at the origin of the coordinate system (0,0)
+#In my code I will assume that the sun is stationary at the origin of the coordinate system, and its initial position and velocity vectors are both zero.
 
 #Initial position vector of the sun
 r_sun = np.array([0.0, 0.0])
 
 #Initial velocity vector of the sun
 v_sun = np.array([0.0, 0.0])
+
+#Joined the two initial arrays together
+state_sun = np.hstack((r_sun, v_sun))
+print("The initial position and velocity vectors of the sun are: ")
+print(state_sun)
+print()
