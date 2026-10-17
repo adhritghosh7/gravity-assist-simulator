@@ -76,4 +76,4 @@ print()
 #Defining the initial conditions of the spacecraft
 
 #Here, I will take the radii of the planets as mean approximations of their actual radii
-r_planet = Plaents[t_planet]['r']
+r_planet = Planets[t_planet]['r']
