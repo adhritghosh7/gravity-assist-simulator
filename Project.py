@@ -14,11 +14,11 @@ AU = 1.496e11
 #No of seconds in a day
 Day_sec = 86400
 
-#Planets Database -> [Mass (kg), Semi-major axis (m), Orbital speed (m/s)]
+#Planets Database -> [Mass (kg), Semi-major axis (m), Orbital speed (m/s), Radius (m)]
 Planets = {
-    'Earth':{'mass':5.972e24, 'a':1 * AU, 'v':29780},
-    'Mars':{'mass':6.416e23, 'a':1.523 * AU, 'v':24070},
-    'Jupiter':{'mass':1.898e27, 'a':5.2 * AU, 'v':13060}
+    'Earth':{'mass':5.972e24, 'a':1 * AU, 'v':29780,'r':6371000},
+    'Mars':{'mass':6.416e23, 'a':1.523 * AU, 'v':24070,'r':3390000},
+    'Jupiter':{'mass':1.898e27, 'a':5.2 * AU, 'v':13060,'r':69911000}
 }
 
 print("Welcome to the Gravity Assist Simulation!")
@@ -71,3 +71,9 @@ state_sun = np.hstack((r_sun, v_sun))
 print("The initial position and velocity vectors of the sun are: ")
 print(state_sun)
 print()
+
+
+#Defining the initial conditions of the spacecraft
+
+#Here, I will take the radii of the planets as mean approximations of their actual radii
+r_planet = Plaents[t_planet]['r']
