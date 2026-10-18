@@ -92,9 +92,7 @@ else:
     r_sc = r_0 + np.array([-D, b])
 
     #Assumed incoming speed of the spacecraft (m/s)
-    v_relative = float(input(
-        "Please enter the incoming velocity of the spacecraft (m/s): "
-        ))
+    v_relative = float(input("Please enter the incoming velocity of the spacecraft (m/s): "))
     print()
 
     #Initial velocity vector of the spacecraft
