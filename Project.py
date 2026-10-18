@@ -34,6 +34,8 @@ t_planet = input("Enter the name of the planet you want to choose: ")
 
 if t_planet not in Planets:
     print("Invalid planet name. Please choose from the available planets.")
+
+
 else:
     print("The mass of", t_planet, "is", Planets[t_planet]['mass'], "kg")
     print("The semi-major axis of", t_planet, "is", Planets[t_planet]['a'], "m")
@@ -44,16 +46,16 @@ else:
 
 #The sun is at the origin of the coordinate system (0,0)
 #Initial position vector of planet
-r_0 = np.array([Planets[t_planet]['a'],0.0])
+    r_0 = np.array([Planets[t_planet]['a'],0.0])
 
 #Initial velocity vector of planet
-v_0 = np.array([0.0, Planets[t_planet]['v']])
+    v_0 = np.array([0.0, Planets[t_planet]['v']])
 
 #Joined the two initial arrays together
-state_0 = np.hstack((r_0, v_0))
-print("The initial position and velocity vectors of",t_planet,"are: ")
-print(state_0)
-print()
+    state_0 = np.hstack((r_0, v_0))
+    print("The initial position and velocity vectors of",t_planet,"are: ")
+    print(state_0)
+    print()
 
 
 #Defining the sun's position and velocity vectors in our cartesian coordinate system
@@ -61,19 +63,19 @@ print()
 #In my code I will assume that the sun is stationary at the origin of the coordinate system, and its initial position and velocity vectors are both zero.
 
 #Initial position vector of the sun
-r_sun = np.array([0.0, 0.0])
+    r_sun = np.array([0.0, 0.0])
 
 #Initial velocity vector of the sun
-v_sun = np.array([0.0, 0.0])
+    v_sun = np.array([0.0, 0.0])
 
 #Joined the two initial arrays together
-state_sun = np.hstack((r_sun, v_sun))
-print("The initial position and velocity vectors of the sun are: ")
-print(state_sun)
-print()
+    state_sun = np.hstack((r_sun, v_sun))
+    print("The initial position and velocity vectors of the sun are: ")
+    print(state_sun)
+    print()
 
 
 #Defining the initial conditions of the spacecraft
 
 #Here, I will take the radii of the planets as mean approximations of their actual radii
-r_planet = Planets[t_planet]['r']
+    r_planet = Planets[t_planet]['r']
