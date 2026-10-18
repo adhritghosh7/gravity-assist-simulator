@@ -86,5 +86,25 @@ else:
     D = 50e9
 
     #Sideways offset from the target planet
-    b = 20 * Planets[t_planet]['r']
+    b = 20 * r_planet
 
+    #Initial position vector of the spacecraft
+    r_sc = r_0 + np.array([-D, b])
+
+    #Assumed incoming speed of the spacecraft (m/s)
+    v_relative = float(input(
+        "Please enter the incoming velocity of the spacecraft (m/s): "
+        ))
+    print()
+
+    #Initial velocity vector of the spacecraft
+    v_sc = v_0 + np.array([v_relative, 0.0])
+
+    #Joined the two initial arrays together
+    state_sc = np.hstack((r_sc, v_sc))
+    print("The initial position and velocity vectors of the spacecraft are: ")
+    print(state_sc)
+    print()
+
+    #My code assumes that all of the planets, the sun and the spacecraft are on the positive x-axis
+    #This isn't a realistic assumption, but it simplifies calculations and allows the code to simulate the gravity assist maneuver better. 
