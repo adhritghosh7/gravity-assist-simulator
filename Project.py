@@ -106,3 +106,15 @@ else:
 
     #My code assumes that all of the planets, the sun and the spacecraft are on the positive x-axis
     #This isn't a realistic assumption, but it simplifies calculations and allows the code to simulate the gravity assist maneuver better. 
+
+    #Defining the accelearion function for the spacecraft
+    def acceleration(t, state):
+        #Extracting the planet's position and velocity
+        state_planet = state[0:4]
+        r_planet_current = state_planet[0:2]
+        v_planet_current = state_planet[2:4]
+
+        #Extracting the spacecraft's position and velocity
+        state_sc = state[4:8]
+        r_sc = state_sc[0:2]
+        v_sc = state_sc[2:4]
