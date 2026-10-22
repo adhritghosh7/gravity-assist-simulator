@@ -105,7 +105,7 @@ else:
     print()
 
     #My code assumes that all of the planets, the sun and the spacecraft are on the positive x-axis
-    #This isn't a realistic assumption, but it simplifies calculations and allows the code to simulate the gravity assist maneuver better. 
+    #This isn't a realistic assumption, but it simplifies calculations and allows the code to simulate the gravity assist manoeuvre better. 
 
     #Defining the accelearion function for the spacecraft
     def acceleration(t, state):
