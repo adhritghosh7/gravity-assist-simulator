@@ -157,8 +157,10 @@ else:
     if v_relative <= 0:
         raise ValueError("Incoming velocity must be positive please try again!")
 
+    #Here we give the spacecraft roughly enough time to travel
+    #Therefore, we take the distance as 2 * D
+    #The fomula used is time = distance / velocity
     t_end = 2 * D / v_relative
 
     #Time interval in seconds
     t_span = (0,t_end)
-    
