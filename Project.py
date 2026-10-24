@@ -125,4 +125,26 @@ else:
 
         #Calculating distance between planet and spacecraft
         r_relative = r_spacecraft - r_planet_current
-        
+        d_relative = np.linalg.norm(r_relative)
+
+        #Acceleration of planet due to Sun
+        a_planet = -G * M_sun * r_planet_current / d_planet_sun**3
+
+        #Acceleration of spacecraft due to Sun
+        a_sun_sc = -G * M_sun * r_spacecraft / d_sc_sun**3
+
+        #Acceleration of spacecraft due to planet
+        a_planet_sc = -G * Planets[t_planet]['mass'] * r_relative / d_relative**3
+
+        #We know that the total acceleration will be the vecotr sum of the 2 accelerations acting on it
+        #Hence, the total acceleration can be written as:
+        a_spacecraft = a_sun_sc + a_planet_sc
+
+        #Returning the state variables
+        return np.hstack((
+            v_planet_current,
+            a_planet,
+            v_spacecraft,
+            a_spacecraft
+        ))
+    
