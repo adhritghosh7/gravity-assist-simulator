@@ -183,4 +183,29 @@ else:
     else:
         print("Simulation failed")
 
-    
+    #Extracting the positions of the planet and spacecraft fot plotting the graph
+    x_planet = sol.y[0] / AU
+    y_planet = sol.y[1] / AU
+
+    x_sc = sol.y[4] / AU
+    y_sc = sol.y[5] / AU
+
+
+    #Plotting the graph
+
+    plt.figure(figsize=(10,7))
+
+    plt.plot(x_planet, y_planet, label = t_planet)
+    plt.plot(x_sc, y_sc, label = "Spacecraft")
+
+    #Plotting Sun at the origin
+    plt.scatter(0,0, label = "Sun")
+
+    plt.xlabel("x-position (AU)")
+    plt.ylabel("y-position (AU)")
+    plt.title("Gravity Assist Simulation")
+
+    plt.axis("equal")
+    plt.grid(True)
+    plt.legend()
+    plt.show()
