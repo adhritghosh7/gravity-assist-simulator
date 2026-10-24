@@ -180,3 +180,7 @@ else:
     if sol.success:
         print("The simulation was successful!")
         print("Simulation duration:", t_end / Day_sec,"days")
+    else:
+        print("Simulation failed")
+
+    
