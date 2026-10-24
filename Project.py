@@ -116,5 +116,13 @@ else:
 
         #Extracting the spacecraft's position and velocity
         state_sc = state[4:8]
-        r_sc = state_sc[0:2]
-        v_sc = state_sc[2:4]
+        r_spacecraft = state_sc[0:2]
+        v_spacecraft = state_sc[2:4]
+
+        #Calculating distance from the sun
+        d_planet_sun = np.linalg.norm(r_planet_current)
+        d_sc_sun = np.linalg.norm(r_spacecraft)
+
+        #Calculating distance between planet and spacecraft
+        r_relative = r_spacecraft - r_planet_current
+        
