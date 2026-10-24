@@ -155,7 +155,7 @@ else:
     #Setting up the simulation duration
 
     if v_relative <= 0:
-        print("Incoming velocity must be positive please try again!")
+        raise ValueError("Incoming velocity must be positive please try again!")
 
     t_end = 2 * D / v_relative
 
