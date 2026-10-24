@@ -152,3 +152,13 @@ else:
     #Joining the initial states of the planet and the spacecraft
     state_initial = np.hstack((state_0, state_sc))
 
+    #Setting up the simulation duration
+
+    if v_relative <= 0:
+        print("Incoming velocity must be positive please try again!")
+
+    t_end = 2 * D / v_relative
+
+    #Time interval in seconds
+    t_span = (0,t_end)
+    
