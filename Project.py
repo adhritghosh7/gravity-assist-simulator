@@ -1,6 +1,6 @@
 import numpy as np
 import scipy as sp
-from scipy.integrate import sove_ivp
+from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 
 #Gravitational constant (Nm^2/kg^2)
@@ -162,5 +162,21 @@ else:
     #The fomula used is time = distance / velocity
     t_end = 2 * D / v_relative
 
-    #Time interval in seconds
+    #Time interval in seconds for our simulation
     t_span = (0,t_end)
+
+    #Points at which the solution will be evaluated
+    t_eval = np.linspace(0, t_end, 2000)
+
+    #Solving the equations of motion
+    sol = solve_ivp(
+        acceleration,
+        t_span,
+        state_initial,
+        t_eval=t_eval
+    )
+
+    #Checking if the calcualtion was successful
+    if sol.success:
+        print("The simulation was successful!")
+        print("Simulation duration:", t_end / Day_sec,"days")
