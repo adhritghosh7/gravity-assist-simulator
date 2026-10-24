@@ -1,5 +1,6 @@
 import numpy as np
 import scipy as sp
+from scipy.integrate import sove_ivp
 import matplotlib.pyplot as plt
 
 #Gravitational constant (Nm^2/kg^2)
@@ -147,4 +148,7 @@ else:
             v_spacecraft,
             a_spacecraft
         ))
-    
+
+    #Joining the initial states of the planet and the spacecraft
+    state_initial = np.hstack((state_0, state_sc))
+
