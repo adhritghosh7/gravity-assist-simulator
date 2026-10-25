@@ -10,3 +10,5 @@ The goal of my project is to build a simplified, 2-Dimensional, three-body simul
 
 ## Objectives
 
+1. Modelling gravitational interactions
+To simulate the gravitational acceleration acting on the spacecraft due the planet and the sun and understanding how sum of these accelerations would affect the spacecraft's trajectory. 
