@@ -4,7 +4,7 @@ It is a Python-based physics simulation that explores how gravitational interact
 
 
 ## Project Overview
-When a spacecraft travels through a solar system, it can use the gravitational fields of planets to change its velocity and trajectory. This technique is called gravity assist or gravitational slingshot, allowing the spacecraft to gain or lose energy without relying on onboard propulsion.
+When a spacecraft travels through a solar system, it can use the gravitational fields of planets to change its velocity and trajectory. This technique is called gravity assist or gravitational slingshot. It allows the spacecraft to gain or lose energy without relying on onboard propulsion.
 
 The goal of my project is to build a simplified, 2-Dimensional, three-body simulation that shows the physics behind gravity assists. I took Jupiter as my primary example.
 
