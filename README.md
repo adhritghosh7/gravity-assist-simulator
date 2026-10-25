@@ -10,5 +10,11 @@ The goal of my project is to build a simplified, 2-Dimensional, three-body simul
 
 ## Objectives
 
-### 1. Modelling gravitational interactions:
+### 1. Modelling gravitational interactions
 To simulate the gravitational acceleration acting on the spacecraft due the planet and the sun and understanding how sum of these accelerations would affect the spacecraft's trajectory. 
+
+### 2. Simulating spacecraft trajectories
+To use the solve_ivp function to calculate how the positions and velocities of the simulated bodies change over time.
+
+### 3. Visualising the simulation
+To use the module matplotlib, to plot the simulated trajecoty of the spacecraft and to analyze its motion and understand the effects of gravity.
