@@ -23,5 +23,5 @@ To use the matplotlib library, to plot the simulated trajecoty of the spacecraft
 - Planet Selection: Allows the user to select a planet from the Planets dictionary containing data about the planets.
 - Gravitational Modelling: Calculates the gravitational acceleration acting on the spacecraft due to the Sun and the selected planet
 - Initial Conditions: Defines the initial position and velocity of the celestial bodies and spacecraft for the simulation
-- Numerical Integration: Uses SciPy's solve_ivp function to solve the equations of motion and calculate the state of the system over a certain period of time
-- Trajectory Visualization: Uses Matplotlib to plot the simulated path of the spacecraft and visualize the trajecotry
+- Numerical Integration: Uses SciPy's solve_ivp function to solve the equations of motion and calculate the state (positions and velocities) of the system over a certain period of time
+- Trajectory Visualization: Uses Matplotlib to plot the simulated path of the spacecraft and visualize the trajecotry with the Sun at the origin of the coordinate system.
