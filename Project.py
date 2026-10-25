@@ -205,7 +205,7 @@ else:
     plt.ylabel("y-position (AU)")
     plt.title("Gravity Assist Simulation")
 
-    plt.axis("equal")
+
     plt.grid(True)
     plt.legend()
     plt.show()
