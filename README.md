@@ -18,3 +18,7 @@ To use the solve_ivp function from the SciPy library to calculate how the positi
 
 ### 3. Visualising the simulation
 To use the matplotlib library, to plot the simulated trajecoty of the spacecraft and to analyze its motion and understand the effects of gravity.
+
+## Features
+- Planet Selection: Allows the user to select a planet from the Planets dictionary containing data about the planets.
+- Gravitational Modelling: Calculates the gravitational acceleration acting on the spacecraft due to the Sun and the selected planet
