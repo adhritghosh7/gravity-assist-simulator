@@ -209,3 +209,19 @@ else:
     plt.grid(True)
     plt.legend()
     plt.show()
+
+    #Calculating the distance between the spacecraft and selected planet
+    rel_position = sol.y[4:6] - sol.y[0:2]
+
+    distances = np.linalg.norm(rel_position,axis=0)
+
+    #Finding the minimum distance
+    closest_index = np.argmin(distances)
+    closest_distance = distances[closest_index]
+
+    print("Closest approach:",closest_distance / 1000,"km")
+
+    if closest_distance < r_planet:
+        print("The spacecraft's trajectory intersects the planet!")
+    else:
+        print("The spacecraft passes outside the planet's radius.")
