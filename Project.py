@@ -180,48 +180,51 @@ else:
     if sol.success:
         print("The simulation was successful!")
         print("Simulation duration:", t_end / Day_sec,"days")
+
+        #Calculating the distance between the spacecraft and selected planet
+        rel_position = sol.y[4:6] - sol.y[0:2]
+        
+        distances = np.linalg.norm(rel_position,axis=0)
+        
+        #Finding the minimum distance
+        closest_index = np.argmin(distances)
+        closest_distance = distances[closest_index]
+        
+        print("Closest approach:",closest_distance / 1000,"km")
+        
+        if closest_distance < r_planet:
+            print("The spacecraft's trajectory intersects the planet!")
+        else:
+            print("The spacecraft passes outside the planet's radius.")
+
+
+        #Extracting the positions of the planet and spacecraft fot plotting the graph
+        x_planet = sol.y[0] / AU
+        y_planet = sol.y[1] / AU
+        
+        x_sc = sol.y[4] / AU
+        y_sc = sol.y[5] / AU
+        
+        #Plotting the graph
+           
+        plt.figure(figsize=(10,7))
+             
+        plt.plot(x_planet, y_planet, label = t_planet)
+        plt.plot(x_sc, y_sc, label = "Spacecraft")
+          
+        #Plotting Sun at the origin
+        plt.scatter(0,0, label = "Sun")
+             
+        plt.xlabel("x-position (AU)")
+        plt.ylabel("y-position (AU)")
+        plt.title("Gravity Assist Simulation")
+
+        plt.grid(True)
+        plt.legend()
+        plt.show()
+
+                
     else:
         print("Simulation failed")
 
-    #Extracting the positions of the planet and spacecraft fot plotting the graph
-    x_planet = sol.y[0] / AU
-    y_planet = sol.y[1] / AU
-
-    x_sc = sol.y[4] / AU
-    y_sc = sol.y[5] / AU
-
-
-    #Plotting the graph
-
-    plt.figure(figsize=(10,7))
-
-    plt.plot(x_planet, y_planet, label = t_planet)
-    plt.plot(x_sc, y_sc, label = "Spacecraft")
-
-    #Plotting Sun at the origin
-    plt.scatter(0,0, label = "Sun")
-
-    plt.xlabel("x-position (AU)")
-    plt.ylabel("y-position (AU)")
-    plt.title("Gravity Assist Simulation")
-
-
-    plt.grid(True)
-    plt.legend()
-    plt.show()
-
-    #Calculating the distance between the spacecraft and selected planet
-    rel_position = sol.y[4:6] - sol.y[0:2]
-
-    distances = np.linalg.norm(rel_position,axis=0)
-
-    #Finding the minimum distance
-    closest_index = np.argmin(distances)
-    closest_distance = distances[closest_index]
-
-    print("Closest approach:",closest_distance / 1000,"km")
-
-    if closest_distance < r_planet:
-        print("The spacecraft's trajectory intersects the planet!")
-    else:
-        print("The spacecraft passes outside the planet's radius.")
+    
