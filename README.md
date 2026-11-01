@@ -1,12 +1,12 @@
 # 3-Body Gravity Assist Simulator
 ## What the code actually is:
-It is a Python-based physics simulation that explores how gravitational interactions between heavenly bodies and a spacecraft can change the spacecraft's trajectory and velocity using a gravity assist manoeuvre
+My code is a simulation that graphs and helps us understand the concept of gravity assist. It is a 3-body system simulation that checks how a spacecraft's trajectory changes under the influence of the Sun's and the planet's gravity.
 
 
 ## Project Overview
-When a spacecraft travels through a solar system, it can use the gravitational fields of planets to change its velocity and trajectory. This technique is called gravity assist or gravitational slingshot. It allows the spacecraft to gain or lose energy without relying on onboard propulsion.
+When a spacecraft travels through a solar system, it can use the gravitational fields of planets to change its velocity and trajectory. This technique is called gravity assist. It allows the spacecraft to gain or lose energy without relying on onboard propulsion.
 
-The goal of my project is to build a simplified, 2-Dimensional, three-body simulation that shows the physics behind gravity assists. I have taken Jupiter as my primary example, but there are options for other planets in my code as well.
+The goal of my project is to build a simplified, 2-Dimensional, three-body simulation that shows the physics behind gravity assists and shows how the spacesraft's path changes under the nfluence of gravity. I have taken Jupiter as my primary example, but there are options for other planets in my code as well.
 
 ## Objectives
 
