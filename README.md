@@ -1,7 +1,6 @@
 # 3-Body Gravity Assist Simulator
 ## What my code actually is:
-My code is a simulation that graphs and helps us understand the concept of a gravity assist. It is a 3-body system simulation that checks how a spacecraft's trajectory changes under the influence of the Sun's and the planet's gravity.
-
+My code is a simulator which helps to get a graph and understand the gravity assist concept. It is a 3-body system simulation that checks how a spacecraft's trajectory changes under the influence of the Sun's and the planet's gravity.
 
 ## Project Overview
 When a spacecraft travels through a solar system, it can use the gravitational fields of planets to change its velocity and trajectory. This technique is called gravity assist. It allows the spacecraft to gain or lose energy without relying on onboard propulsion.
@@ -11,10 +10,10 @@ The goal of my project is to build a simplified, 2-Dimensional, three-body simul
 ## Objectives
 
 ### 1. Modelling gravitational interactions
-To calculate the gravitational accelerationg acting on the spacecraftdue to the planet and the Sun and to see how it would affect the spacecraft's path.
+To simulate the gravitational acceleration acting on the spacecraft due the planet and the sun and understanding how sum of these accelerations would affect the spacecraft's trajectory.
 
 ### 2. Simulating spacecraft trajectories
-To use the solve_ivp function from the SciPy library to calculate how the positions and velocities of the simulated bodies change over time.
+To use the solve_ivp function from the SciPy library to help calculate how the positions and velocities of the simulated bodies change over time.
 
 ### 3. Visualising the simulation
 To use the matplotlib library, to plot the simulated trajecoty of the spacecraft and to analyze its motion and understand the effects of gravity.
