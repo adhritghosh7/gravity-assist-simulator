@@ -24,3 +24,14 @@ To use the matplotlib library, to plot the simulated trajectory of the spacecraf
 - Initial Conditions: Defines the initial position and velocity of the celestial bodies and spacecraft for the simulation
 - Numerical Integration: Uses SciPy's solve_ivp function to solve the equations of motion and calculate the state (positions and velocities) of the system over a certain period of time
 - Trajectory Visualization: Uses Matplotlib to plot the simulated path of the spacecraft and visualize the trajectory with the Sun at the origin of the coordinate system.
+
+
+## Physics Behind the Simulation
+
+The main physics law that governs myproject is Newton's Law of Universal Gravitation. This law states that every object with mass attracts every other object with mass thorugh the force of gravity. 
+
+The equation for this law is:
+
+$$
+F = \frac{Gm_1m_2}{r^2}
+$$
