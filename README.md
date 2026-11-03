@@ -28,7 +28,7 @@ To use the matplotlib library, to plot the simulated trajectory of the spacecraf
 
 ## Physics Behind the Simulation
 
-The main physics law that governs my project is Newton's Law of Universal Gravitation. This law states every particle of matter in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers of mass
+The main physics law that governs my project is Newton's Law of Universal Gravitation. This law describes gravity as a force: any particle attracts any other particle with a force proportional to the product of their masses and inversely proportional to the square of the distance between their centers of mass.
 
 The equation for this law is:
 
@@ -39,4 +39,9 @@ $$
 Where:
 - $G$ = Universal gravitational constant
 - $m_1, m_2$ = Masses of the two bodies
-- $r$ = Distance betwwen the centres of mass
+- $r$ = Distance between the centres of mass
+
+## 1. Motion of the Planet
+
+In the simulation, the Sun is kept stationary at the origin of my cartesian plane, while the selected is allowed to move under the gravity of the Sun.
+
