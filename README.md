@@ -28,7 +28,7 @@ To use the matplotlib library, to plot the simulated trajectory of the spacecraf
 
 ## Physics Behind the Simulation
 
-The main physics law that governs myproject is Newton's Law of Universal Gravitation. This law states that every object with mass attracts every other object with mass thorugh the force of gravity. 
+The main physics law that governs my project is Newton's Law of Universal Gravitation. This law states every particle of matter in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers of mass
 
 The equation for this law is:
 
