@@ -35,3 +35,8 @@ The equation for this law is:
 $$
 F = \frac{Gm_1m_2}{r^2}
 $$
+
+Where:
+- $G$ = Universal gravitational constant
+- $m_1, m_2$ = Masses of the two bodies
+- $r$ = Distance betwwen the centres of mass
