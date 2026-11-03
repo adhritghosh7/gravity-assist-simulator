@@ -48,7 +48,7 @@ In the simulation, the Sun is kept stationary at the origin of my cartesian plan
 The acceleration of the planet is calculated using:
 
 $$
-\vec{a}p = -\frac{GM{\text{sun}}\vec{r}_p}{|vec{r}_p|^3}
+\vec{a}p = -\frac{GM{\text{sun}}\vec{r}_p}{vec{r}_p^3}
 $$
 
 Where:
