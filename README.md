@@ -53,6 +53,18 @@ $$
 
 Where:
 - $G$ = Universal gravitational constant
-- $M_{text{sun}}$ = Mass of the Sun
+- $M_{\text{sun}}$ = Mass of the Sun
 - $\vec{r}_p$ = Position vector of the planet relative to the sun
 - $\vec{a}_p$ = Acceleration of the planet
+
+## 2. Motion of the Spacecraft
+
+The spacecraft experiences gravitional acceleration due to both the Sun and the selected planet.
+
+The total acceleration is calculated by adding both the accelerations:
+
+$$
+\vec{a}{\text{total}} = \vec{a}{\text{sun}} + \vec{a}{\text{planet}}
+$$
+
+These gravitational interactions determine the change in the spacecraft's velocity throughout the simulation.
