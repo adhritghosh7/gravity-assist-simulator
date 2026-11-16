@@ -68,3 +68,14 @@ $$
 $$
 
 These gravitational interactions determine the change in the spacecraft's velocity throughout the simulation.
+
+## Assumptions and Limitations
+
+To make the simulation manageable, I made a few assumptions to simplify my code:
+
+- The Sun is assumed to remain stationary at the origin.
+- The simulation is 2 - dimensional only.
+- The planet is influenced only by the Sun's gravity while the spacecraft in influenced by only the Sun's gravity and the planet's gravity.
+- There are no other forces acting on the spacecraft other than the above mentioned forces.
+- The initial positions and velocities are simplified approximations of planetary motion.
+
