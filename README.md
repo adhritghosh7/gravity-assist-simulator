@@ -48,10 +48,11 @@ In the simulation, the Sun is kept stationary at the origin of my cartesian plan
 The acceleration of the planet is calculated using:
 
 $$
-\vec{a}p = -\frac{GM_{\text{sun}}\vec{r}_p}{vec{r}_p^3}
+\vec{a}p = -\frac{GM_{\text{sun}}\vec{r}_p}{|\vec{r}_p|^3}
 $$
 
 Where:
+- $G$ = Universal gravitational constant
 - $M_{text{sun}}$ = Mass of the Sun
 - $\vec{r}_p$ = Position vector of the planet relative to the sun
 - $\vec{a}_p$ = Acceleration of the planet
