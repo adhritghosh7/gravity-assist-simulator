@@ -5,12 +5,12 @@ My code is a simulator which helps to get a graph and understand the gravity ass
 ## Project Overview
 When a spacecraft travels through a solar system, it can use the gravitational fields of planets to change its velocity and trajectory. This technique is called gravity assist. It allows the spacecraft to gain or lose energy without relying on onboard propulsion.
 
-The goal of my project is to build a simplified, 2-Dimensional, three-body simulation that shows the physics behind gravity assists and shows how the spacesraft's path changes due to the effect of gravity. I have taken Jupiter as my primary example, but there are options for other planets in my code as well.
+The goal of my project is to build a simplified, 2-Dimensional, three-body simulation that shows the physics behind gravity assists and  how the spacecraft's path changes due to the effect of gravity. I have taken Jupiter as my primary example, but there are options for other planets in my code as well.
 
 ## Objectives
 
 ### 1. Modelling gravitational interactions
-To simulate the gravitational acceleration acting on the spacecraft due the planet and the sun and understanding how sum of these accelerations would affect the spacecraft's trajectory.
+To simulate the gravitational acceleration acting on the spacecraft due to the planet and the sun and understand how the sum of these accelerations would affect the spacecraft's trajectory.
 
 ### 2. Simulating spacecraft trajectories
 To use the solve_ivp function from the SciPy library to help calculate how the positions and velocities of the simulated bodies change over time.
@@ -59,7 +59,7 @@ Where:
 
 ## 2. Motion of the Spacecraft
 
-The spacecraft experiences gravitional acceleration due to both the Sun and the selected planet.
+The spacecraft experiences gravitational acceleration due to both the Sun and the selected planet.
 
 The total acceleration is calculated by adding both the accelerations:
 
