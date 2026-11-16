@@ -79,3 +79,26 @@ To make the simulation manageable, I made a few assumptions to simplify my code:
 - There are no other forces acting on the spacecraft other than the above mentioned forces.
 - The initial positions and velocities are simplified approximations of planetary motion.
 
+## Technologies Used
+
+- Python: My main programming language
+- NumPy: I used this module for mathematical operations and handling data efficiently
+- SciPy: I used this module for numerical integration using solve_ivp()
+- Matplotlib: I used this module to plot the trajectories of the planet and the spacecraft
+
+## Requirements and Setup
+
+Thbe project requires Python 3.x and the following libraries:
+- NumPy
+- SciPy
+- Matplotlib
+
+## Example Usage and Sample Output
+
+My program asks the user to choose one of the available planets and enter the nicoming spacecraft's velocity. It then caslculates the initial conditions, simulates the motion of the planet and spacecraft. and displays a graph showing their trajectories.
+
+### Sample Output
+
+
+## What I Learnt
+Working on this code helped me integrate core concepts from Physics and Maths with Computer Science. I understood how gravitational ineractions work, about position and velocity vectors in Python, how differential equations help us plot the motion of celstial bodies and how to use different modules such as SciPy, NumPy and Matplotlib. Most importantly, this project gave me an opportunity to explore how a real spacecraft technique can be represented through a simplified mathematical model.
