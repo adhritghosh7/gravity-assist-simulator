@@ -95,7 +95,7 @@ Thbe project requires Python 3.x and the following libraries:
 
 ## Example Usage and Sample Output
 
-My program asks the user to choose one of the available planets and enter the nicoming spacecraft's velocity. It then caslculates the initial conditions, simulates the motion of the planet and spacecraft. and displays a graph showing their trajectories.
+My program asks the user to choose one of the available planets and enter the incoming spacecraft's velocity. It then calculates the initial conditions, simulates the motion of the planet and spacecraft. and displays a graph showing their trajectories.
 
 ### Sample Output
 
